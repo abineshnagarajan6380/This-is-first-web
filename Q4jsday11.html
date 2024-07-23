@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNumber</title>
+    <script>
+        function length() {
+            let a = document.getElementById("input").value;
+            let result=" ";
+            let a1="Bike";
+            document.getElementById("Length").textContent ="Length is: "+a.length;
+            document.getElementById("charat").textContent ="charAt(0) is: "+a.charAt(0);
+            document.getElementById("slice").textContent ="a.slice(2,8) is: "+a.slice(2,8);
+            document.getElementById("substring").textContent ="a.substring(2,8) is: "+a.substring(2,8);
+            document.getElementById("substr").textContent ="a.substr(2,8) is: "+a.substr(5,7);
+            document.getElementById("toUpperCase").textContent ="a.toUpperCase() is: "+a.toUpperCase();
+            document.getElementById("toLowerCase").textContent ="a.toLowerCase() is: "+a.toLowerCase();
+            document.getElementById("concat").textContent ="a.concat(' ',a1)"+a.concat(" ",a1);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    Enter the String
+    <input type="text" value="Enter the String" onfocus="this.value=''" onblur="PrimeNumber()" id="input">
+    
+    <br><br>
+    <button onclick="length()">Functions</button>
+    <div id="Length"></div>
+    <div id="charat"></div>
+    <div id="slice"></div>
+    <div id="substring"></div>
+    <div id="substr"></div>
+    <div id="toUpperCase"></div>
+    <div id="toLowerCase"></div>
+    <div id="concat"></div>
+</body>
+
+</html>
